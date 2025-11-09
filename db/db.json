@@ -1,0 +1,28 @@
+{
+  "reviews": [
+    {
+      "id": "1",
+      "destination": "Barcelona, España",
+      "title": "Ciudad increíble con mucha historia",
+      "comment": "Barcelona es una ciudad vibrante llena de arquitectura modernista de Gaudí. La Sagrada Familia es impresionante y las Ramblas están llenas de vida. La comida es deliciosa y la gente muy acogedora.",
+      "rating": "5",
+      "imageUrl": "https://images.unsplash.com/photo-1583422409516-2895a77efded?w=800"
+    },
+    {
+      "id": "2",
+      "destination": "París, Francia",
+      "title": "La ciudad del amor y la luz",
+      "comment": "París nunca defrauda. La Torre Eiffel es icónica, el Louvre es fascinante, y pasear por el Sena al atardecer es mágico. Los cafés parisinos tienen un encanto especial.",
+      "rating": "5",
+      "imageUrl": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?w=800"
+    },
+    {
+      "id": "3",
+      "destination": "Roma, Italia",
+      "title": "Historia en cada esquina",
+      "comment": "Roma es un museo al aire libre. El Coliseo, el Vaticano, la Fontana di Trevi... cada rincón cuenta una historia. La pasta y la pizza son auténticas y deliciosas.",
+      "rating": "4",
+      "imageUrl": "https://images.unsplash.com/photo-1552832230-c0197dd311b5?w=800"
+    }
+  ]
+}

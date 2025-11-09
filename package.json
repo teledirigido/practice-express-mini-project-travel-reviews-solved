@@ -1,0 +1,28 @@
+{
+  "name": "express-mini-project",
+  "version": "1.0.0",
+  "description": "CRUD de reseñas de viajes con Express, Handlebars, LowDB y Cloudinary",
+  "type": "module",
+  "main": "app.js",
+  "scripts": {
+    "start": "node --watch app.js"
+  },
+  "keywords": [
+    "express",
+    "handlebars",
+    "lowdb",
+    "cloudinary",
+    "crud"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cloudinary": "^2.8.0",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-handlebars": "^8.0.3",
+    "handlebars": "^4.7.8",
+    "lowdb": "^7.0.1",
+    "multer": "^2.0.2"
+  }
+}
