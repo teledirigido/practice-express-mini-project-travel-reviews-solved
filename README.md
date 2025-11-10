@@ -217,7 +217,7 @@ Procesar el formulario, subir imagen a Cloudinary y guardar en la base de datos.
 
 1. **Configurar Cloudinary en `app.js`**
    - Importar y configurar Cloudinary con variables de entorno
-   - Configurar multer para manejar archivos
+   - Configurar multer con memory storage para manejar archivos
 
 2. **Implementar ruta POST `/` en `routes/reviews.js`**
    - Subir imagen a Cloudinary usando `cloudinary.uploader.upload()`
