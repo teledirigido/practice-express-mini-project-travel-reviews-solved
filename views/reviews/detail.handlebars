@@ -1,0 +1,40 @@
+<div class="container mx-auto px-4 py-8">
+  <div class="max-w-4xl mx-auto">
+    <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+      <img src="{{review.imageUrl}}" alt="{{review.destination}}" class="w-full h-64 md:h-96 object-cover">
+      
+      <div class="p-8">
+        <div class="mb-6">
+          <h1 class="text-3xl font-bold text-gray-800 mb-2">{{review.destination}}</h1>
+          <h2 class="text-xl text-gray-600 mb-4">{{review.title}}</h2>
+          
+          <div class="flex items-center mb-6">
+            <span class="text-yellow-400 text-xl">★★★★★</span>
+            <span class="ml-2 text-lg text-gray-600">({{review.rating}}/5)</span>
+          </div>
+        </div>
+        
+        <div class="mb-8">
+          <h3 class="text-lg font-semibold text-gray-800 mb-3">Comentario:</h3>
+          <p class="text-gray-700 leading-relaxed">{{review.comment}}</p>
+        </div>
+        
+        <div class="flex flex-wrap gap-4">
+          <a href="/reviews" class="bg-gray-500 hover:bg-gray-600 text-white px-6 py-2 rounded-lg transition duration-200">
+            ← Volver a la lista
+          </a>
+          
+          <a href="/reviews/{{review.id}}/edit" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-lg transition duration-200">
+            Editar
+          </a>
+          
+          <form method="POST" action="/reviews/{{review.id}}/delete" class="inline" onsubmit="return confirm('¿Estás seguro de que quieres eliminar esta reseña?')">
+            <button type="submit" class="bg-red-500 hover:bg-red-600 text-white px-6 py-2 rounded-lg transition duration-200">
+              Eliminar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
