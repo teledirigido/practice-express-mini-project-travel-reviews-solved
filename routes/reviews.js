@@ -1,6 +1,7 @@
 import express from 'express';
 import db from '../db/connection.js';
 import crypto from 'crypto';
+import upload from '../config/multer.js';
 
 const router = express.Router();
 
@@ -15,7 +16,7 @@ router.get('/new', (req, res) => {
 });
 
 // POST / - Crear nueva reseña
-router.post('/', req.app.locals.upload.single('image'), async (req, res) => {
+router.post('/', upload.single('image'), async (req, res) => {
   try {
     const { destination, title, comment, rating } = req.body;
     
@@ -65,7 +66,7 @@ router.get('/:id/edit', (req, res) => {
 });
 
 // POST /:id - Actualizar reseña existente
-router.post('/:id', req.app.locals.upload.single('image'), async (req, res) => {
+router.post('/:id', upload.single('image'), async (req, res) => {
   try {
     const { destination, title, comment, rating } = req.body;
     const reviewIndex = db.data.reviews.findIndex(r => r.id === req.params.id);
