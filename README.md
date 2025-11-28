@@ -163,6 +163,8 @@ Mostrar una lista de todos los destinos con sus reseñas.
 
 **Resultado esperado:** Ver una lista con todos los destinos almacenados en la base de datos.
 
+![Screenshot](travel-reviews-home.webp)
+
 ---
 
 ## Iteración 3: Ver Detalle de un Destino (READ - Detail)
@@ -182,6 +184,8 @@ Mostrar toda la información de un destino específico.
      - "Eliminar" → Formulario POST a `/reviews/:id/delete`
 
 **Resultado esperado:** Ver toda su información detallada.
+
+![Screenshot](travel-reviews-read.webp)
 
 ---
 
@@ -206,6 +210,8 @@ Mostrar un formulario para crear una nueva reseña.
 
 **Resultado esperado:** Ver un formulario para crear un nuevo destino.
 
+![Screenshot](travel-reviews-create.webp)
+
 ---
 
 ## Iteración 5: Crear Nuevo Destino - Procesar (CREATE - Parte 2)
@@ -217,7 +223,7 @@ Procesar el formulario, subir imagen a Cloudinary y guardar en la base de datos.
 
 1. **Configurar Cloudinary en `app.js`**
    - Importar y configurar Cloudinary con variables de entorno
-   - Configurar multer para manejar archivos
+   - Configurar multer con memory storage para manejar archivos
 
 2. **Implementar ruta POST `/` en `routes/reviews.js`**
    - Subir imagen a Cloudinary usando `cloudinary.uploader.upload()`
@@ -253,6 +259,8 @@ Mostrar un formulario pre-cargado con los datos del destino para editarlo.
    - Botones: "Actualizar" y "Cancelar"
 
 **Resultado esperado:** Ver el formulario con los datos del destino pre-cargados.
+
+![Screenshot](travel-reviews-edit.webp)
 
 ---
 
