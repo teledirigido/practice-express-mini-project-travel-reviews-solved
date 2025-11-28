@@ -1,4 +1,4 @@
-# Práctica: Express Mini-Project - Travel Reviews
+# Práctica: Express Mini-Project - Travel Reviews (SOLVED)
 
 Vamos a construir una aplicación CRUD completa de reseñas de viajes usando:
 - Express
